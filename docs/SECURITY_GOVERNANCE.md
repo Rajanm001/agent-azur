@@ -1,6 +1,6 @@
 # Safety, Security, and Governance Plan
 ### Azure Agentic AI for RDP Supportability
-Designed by: Rajan AI
+Designed by: Rajan Mishra
 
 ---
 
@@ -400,5 +400,5 @@ AzureRDPAgentLogs
 
 Document Version: 1.0.0  
 Last Updated: October 5, 2025  
-Author: Rajan AI  
+Author: Rajan Mishra  
 Classification: Internal Use

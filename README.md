@@ -156,7 +156,7 @@ Step 2: Watch the Magic                         ▼
 
 ====================================================================              │  VALIDATION AGENT    │
 
-  RAJAN AI - AGENTIC AZURE SUPPORTABILITY TEST              │  • Port scan :3389   │
+  Rajan Mishra - AGENTIC AZURE SUPPORTABILITY TEST              │  • Port scan :3389   │
 
   Windows VM RDP (Port 3389) Troubleshooter              │  • RDP handshake     │
 
@@ -276,7 +276,7 @@ cd "Rajan_AI_Agentic_Azure_Supportability"
 
                 ▼║        🧠 Azure Agentic AI - RDP Supportability System       ║
 
-       ┌─────────────────┐║        Developed by: Rajan AI                                ║
+       ┌─────────────────┐║        Developed by: Rajan Mishra                                ║
 
        │  VALIDATION     │╚══════════════════════════════════════════════════════════════╝
 
@@ -918,7 +918,7 @@ Per Ticket Cost Comparison:## 🤝 Support & Contact
 
 
 
-| Component | Manual | AI System | Savings |Project Author: Rajan AI  
+| Component | Manual | AI System | Savings |Project Author: Rajan Mishra  
 
 |-----------|--------|-----------|---------|Role: Azure Solutions Architect | AI/ML Specialist  
 
@@ -984,7 +984,7 @@ Annual Savings (1,000 tickets/month):- 🐙 GitHub: [github.com/rajan-ai](#)
 
 ## 🚀 Deployment Options
 
-Proprietary - Rajan AI © 2025
+Proprietary - Rajan Mishra © 2025
 
 ### Option 1: Azure Container Instances (Recommended)
 
@@ -1036,7 +1036,7 @@ Status: ✅ PRODUCTION READY
 
 ---
 
-Built with ❤️ by Rajan AI
+Built with ❤️ by Rajan Mishra
 
 ## 🤝 Contributing
 

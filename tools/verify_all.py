@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """
 verify_all.py - Complete Project Verification & Packaging
-© Rajan AI — 2025
+© Rajan Mishra — 2025
 
 Performs comprehensive validation:
 - Architecture & logic verification
@@ -188,7 +188,7 @@ def run_integration_tests(py_path: str) -> bool:
     test_file = test_dir / "test_mock_mode.py"
     if not test_file.exists():
         test_file.write_text("""
-# © Rajan AI — 2025
+# © Rajan Mishra — 2025
 import os
 import sys
 sys.path.insert(0, str(os.path.dirname(os.path.dirname(__file__))))
@@ -386,7 +386,7 @@ def add_author_headers() -> int:
     """Add author headers to source files."""
     print_header("8️⃣ ADDING AUTHOR HEADERS")
     
-    header = '"""\n© Rajan AI — 2025\nAgentic AI for Azure Supportability Test\n"""\n'
+    header = '"""\n© Rajan Mishra — 2025\nAgentic AI for Azure Supportability Test\n"""\n'
     files_updated = 0
     
     for py_file in (ROOT / "src").rglob("*.py"):
@@ -396,7 +396,7 @@ def add_author_headers() -> int:
         content = py_file.read_text(encoding='utf-8')
         
         # Check if header already exists
-        if "© Rajan AI" not in content:
+        if "© Rajan Mishra" not in content:
             # Add after shebang if exists, otherwise at top
             if content.startswith("#!"):
                 lines = content.split('\n', 1)
@@ -453,7 +453,7 @@ def generate_final_report(results: Dict[str, Any]):
     print_header("📊 FINAL VALIDATION REPORT")
     
     print("\n" + "="*70)
-    print("  RAJAN AI — AGENTIC AZURE SUPPORTABILITY TEST")
+    print("  Rajan Mishra — AGENTIC AZURE SUPPORTABILITY TEST")
     print("  Client Satisfaction & Production Readiness Report")
     print("="*70)
     
@@ -518,7 +518,7 @@ def generate_final_report(results: Dict[str, Any]):
     if all_passed:
         print("  🎉 ALL VALIDATIONS PASSED")
         print("  ✅ Project is PRODUCTION-READY and CLIENT-SATISFACTORY")
-        print("  ✅ Authored by Rajan AI - Expert-Level Quality")
+        print("  ✅ Authored by Rajan Mishra - Expert-Level Quality")
         print("\n  📋 Next Steps:")
         print("     1. Test with Azure CLI: az login && python src/main.py")
         print("     2. Deploy to production with Service Principal")
@@ -534,7 +534,7 @@ def generate_final_report(results: Dict[str, Any]):
 def main():
     """Main validation orchestration."""
     print("\n" + "🔥"*35)
-    print("  RAJAN AI — COMPLETE PROJECT VALIDATION")
+    print("  Rajan Mishra — COMPLETE PROJECT VALIDATION")
     print("  Agentic Azure Supportability Test")
     print("🔥"*35)
     

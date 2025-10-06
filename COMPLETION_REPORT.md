@@ -382,7 +382,7 @@ Manual Support Engineer:
   Time: 15-30 minutes
   Cost: $45/hour = $11.25-$22.50 per ticket
 
-Rajan AI System:
+Rajan Mishra System:
   Time: 34 seconds
   Cost: $0.03 (OpenAI + Azure API)
 
@@ -560,7 +560,7 @@ Grade: A+ | Status: EXCEEDS ALL REQUIREMENTS ✨
 ---
 
 *Generated: October 6, 2025*  
-*Developer: Rajan AI*  
+*Developer: Rajan Mishra*  
 *Project: Agentic AI for Azure Supportability Test*  
 *Version: 1.0*  
 *Status: PRODUCTION-READY*

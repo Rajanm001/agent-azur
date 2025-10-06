@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-© Rajan AI — 2025
+© Rajan Mishra — 2025
 Comprehensive Project Validation & Production Optimization
 Validates the entire Azure Agentic AI project for production readiness
 
@@ -52,7 +52,7 @@ EXPECTED_METRICS = [
 ]
 
 class ProjectValidator:
-    """Comprehensive validation suite for Rajan AI's Azure Agentic project."""
+    """Comprehensive validation suite for Rajan Mishra's Azure Agentic project."""
     
     def __init__(self):
         self.results = {}
@@ -368,7 +368,7 @@ class ProjectValidator:
     def generate_final_report(self) -> None:
         """Generate comprehensive validation report."""
         print("\n" + "="*80)
-        print("RAJAN AI - PRODUCTION READINESS REPORT")
+        print("Rajan Mishra - PRODUCTION READINESS REPORT")
         print("Azure Agentic AI Supportability Test")
         print("="*80)
         
@@ -407,7 +407,7 @@ class ProjectValidator:
     def run_comprehensive_validation(self) -> bool:
         """Run all validation steps."""
         print("🚀 Starting Comprehensive Project Validation")
-        print("© Rajan AI — 2025")
+        print("© Rajan Mishra — 2025")
         
         validation_steps = [
             ("Environment Setup", self.validate_environment),

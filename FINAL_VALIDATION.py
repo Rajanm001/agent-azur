@@ -77,7 +77,7 @@ def main():
     print(f"{Color.BOLD}{Color.BLUE}")
     print("╔═══════════════════════════════════════════════════════════╗")
     print("║     FINAL VALIDATION - PRE-SUBMISSION CHECKLIST          ║")
-    print("║              Rajan AI - Azure Agentic AI                  ║")
+    print("║              Rajan Mishra - Azure Agentic AI                  ║")
     print("╚═══════════════════════════════════════════════════════════╝")
     print(f"{Color.RESET}")
     

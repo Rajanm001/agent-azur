@@ -1,5 +1,5 @@
 """
-© Rajan AI — 2025
+© Rajan Mishra — 2025
 Agentic AI for Azure Supportability Test
 """
 """
@@ -43,7 +43,7 @@ def print_banner():
     """Display the application banner."""
     banner = """
 ====================================================================
-  RAJAN AI - AGENTIC AZURE SUPPORTABILITY TEST
+  Rajan Mishra - AGENTIC AZURE SUPPORTABILITY TEST
   Windows VM RDP (Port 3389) Troubleshooter
 ====================================================================
 """

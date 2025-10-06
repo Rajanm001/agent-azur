@@ -1,5 +1,5 @@
 
-# © Rajan AI — 2025
+# © Rajan Mishra — 2025
 import os
 import sys
 sys.path.insert(0, str(os.path.dirname(os.path.dirname(__file__))))

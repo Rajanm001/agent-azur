@@ -1,5 +1,5 @@
 """
-© Rajan AI — 2025
+© Rajan Mishra — 2025
 Agentic AI for Azure Supportability Test
 """
 """

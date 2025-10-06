@@ -186,7 +186,7 @@ Add the following content:
 #### Option A: MOCK Mode (No Azure Needed)
 ```env
 # ============================================
-# RAJAN AI - AZURE AGENTIC AI CONFIGURATION
+# Rajan Mishra - AZURE AGENTIC AI CONFIGURATION
 # ============================================
 
 # AUTHENTICATION MODE (choose one)
@@ -259,7 +259,7 @@ AZURE_AUTH_MODE=MOCK python src/main.py
 Expected output:
 ```
 ====================================================================
-  RAJAN AI - AGENTIC AZURE SUPPORTABILITY TEST
+  Rajan Mishra - AGENTIC AZURE SUPPORTABILITY TEST
   Windows VM RDP (Port 3389) Troubleshooter
 ====================================================================
 
@@ -515,4 +515,4 @@ All checked? 🎉 You're ready to run the AI agent!
 
 *Last Updated: October 6, 2025*  
 *Version: 1.0*  
-*Developer: Rajan AI*
+*Developer: Rajan Mishra*

@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-© Rajan AI — 2025
+© Rajan Mishra — 2025
 Quick Setup & Test Script
 Sets up environment and runs basic validation tests
 """
@@ -24,7 +24,7 @@ def run_cmd(cmd, cwd=None):
 
 def main():
     """Main setup and validation."""
-    print("🚀 Rajan AI - Quick Setup & Validation")
+    print("🚀 Rajan Mishra - Quick Setup & Validation")
     print("="*50)
     
     # 1. Create virtual environment if needed

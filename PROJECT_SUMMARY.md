@@ -237,7 +237,7 @@ python-dotenv==1.1.1           # Environment config
 PS C:\Users\Rajan mishra Ji\assisngment 1> python src\main.py
 
 ╔═══════════════════════════════════════════════════════════╗
-║     RAJAN AI - AGENTIC AZURE SUPPORTABILITY TEST         ║
+║     Rajan Mishra - AGENTIC AZURE SUPPORTABILITY TEST         ║
 ║            Windows VM RDP Troubleshooter                  ║
 ╚═══════════════════════════════════════════════════════════╝
 
@@ -358,7 +358,7 @@ Windows VM RDP Troubleshooting
 
 ## 🏆 Key Differentiators
 
-| Feature | Traditional Support | Rajan AI System |
+| Feature | Traditional Support | Rajan Mishra System |
 |---------|---------------------|------------------|
 | Time to Resolution | 15-30 minutes | 34 seconds (99.3% faster) |
 | Cost per Ticket | $11.25-$22.50 | $0.03 (99.7% cheaper) |
@@ -407,7 +407,7 @@ CIRCUIT_BREAKER_THRESHOLD=3         # Failures before auto-pause
 ## 📞 Support & Contact
 
 ### Project Information
-- Developer: Rajan AI
+- Developer: Rajan Mishra
 - Version: 1.0
 - Release Date: January 2025
 - License: Proprietary (Client-owned)
@@ -496,5 +496,5 @@ Status: READY FOR CLIENT DELIVERY 🚀
 
 *Generated: October 6, 2025*  
 *Project: Agentic AI for Azure Supportability Test*  
-*Developer: Rajan AI*  
+*Developer: Rajan Mishra*  
 *Version: 1.0*

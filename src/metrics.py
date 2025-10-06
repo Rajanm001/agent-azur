@@ -1,10 +1,10 @@
 """
-© Rajan AI — 2025
+© Rajan Mishra — 2025
 Agentic AI for Azure Supportability Test
 """
 """
 Metrics Module - Prometheus Metrics for Azure RDP Agent
-Designed by Rajan AI for production observability
+Designed by Rajan Mishra for production observability
 """
 from prometheus_client import Counter, Histogram, Gauge, start_http_server, CollectorRegistry
 import time
