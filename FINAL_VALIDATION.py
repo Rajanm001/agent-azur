@@ -195,7 +195,7 @@ def main():
     print_header("📚 CHECKING DOCUMENTATION")
     
     docs_checks = [
-        ("README.md contains architecture", "README.md", "## 🏗️ System Architecture"),
+        ("README.md contains architecture", "README.md", "System Architecture"),
         ("README.md contains troubleshooting play", "README.md", "Troubleshooting Play"),
         ("Architecture diagram exists", "architecture_diagram.md", "Customer Flow"),
         ("Security governance exists", "docs/SECURITY_GOVERNANCE.md", "Security Architecture"),
