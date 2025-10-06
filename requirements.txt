@@ -1,0 +1,17 @@
+# --- Core logging & monitoring ---
+structlog
+prometheus-client
+
+# --- Azure SDKs ---
+azure-identity
+azure-mgmt-compute
+azure-core
+azure-mgmt-resource
+azure-mgmt-network
+
+# --- General utilities ---
+python-dotenv
+requests
+
+# --- OpenAI integration ---
+openai

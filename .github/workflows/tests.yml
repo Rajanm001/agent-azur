@@ -1,0 +1,76 @@
+name: Azure Agentic AI - Python Tests
+
+on:
+  push:
+    branches: [ main, develop ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  test:
+    runs-on: ${{ matrix.os }}
+    strategy:
+      matrix:
+        os: [ubuntu-latest, windows-latest, macos-latest]
+        python-version: ['3.11', '3.12']
+
+    steps:
+    - uses: actions/checkout@v3
+    
+    - name: Set up Python ${{ matrix.python-version }}
+      uses: actions/setup-python@v4
+      with:
+        python-version: ${{ matrix.python-version }}
+    
+    - name: Install dependencies
+      run: |
+        python -m pip install --upgrade pip
+        pip install -r requirements.txt
+        pip install pytest pytest-cov
+    
+    - name: Run validation script
+      run: |
+        python FINAL_VALIDATION.py
+      env:
+        AZURE_AUTH_MODE: MOCK
+    
+    - name: Run tests
+      run: |
+        python -m pytest tests/ -v
+      env:
+        AZURE_AUTH_MODE: MOCK
+    
+    - name: Test MOCK mode
+      run: |
+        python src/main.py &
+        sleep 10
+        kill %1
+      shell: bash
+      env:
+        AZURE_AUTH_MODE: MOCK
+        OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+
+  lint:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - uses: actions/checkout@v3
+    
+    - name: Set up Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: '3.11'
+    
+    - name: Install dependencies
+      run: |
+        python -m pip install --upgrade pip
+        pip install pylint mypy
+        pip install -r requirements.txt
+    
+    - name: Run pylint
+      run: |
+        pylint src/ --rcfile=.pylintrc || true
+    
+    - name: Run mypy
+      run: |
+        mypy src/ --ignore-missing-imports || true
