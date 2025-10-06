@@ -51,11 +51,11 @@ Diagnostic Analysis:
 {diagnostic_summary}
 
 Please provide:
-1. **Immediate Actions**: Steps that can be taken right now to address critical issues
-2. **Short-term Fixes** (1-7 days): Tactical improvements
-3. **Long-term Solutions** (1-3 months): Strategic improvements
-4. **Automation Opportunities**: Tasks that can be automated
-5. **Implementation Steps**: Detailed step-by-step instructions for each fix
+1. Immediate Actions: Steps that can be taken right now to address critical issues
+2. Short-term Fixes (1-7 days): Tactical improvements
+3. Long-term Solutions (1-3 months): Strategic improvements
+4. Automation Opportunities: Tasks that can be automated
+5. Implementation Steps: Detailed step-by-step instructions for each fix
 
 For each recommendation, include:
 - Priority level (Critical/High/Medium/Low)

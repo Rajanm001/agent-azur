@@ -246,18 +246,18 @@ Closure Process
 ```
 
 ### Guardrails & Controls
-- **Human-in-the-Loop**: Destructive actions require approval
-- **Dry-Run Mode**: Test fixes without applying
-- **Rollback Capability**: Automatic rollback on failure
-- **Action Logging**: Every action logged to Azure Monitor
-- **Rate Limiting**: Max 5 remediation attempts per hour
-- **Scope Restriction**: Only authorized subscriptions/RGs
+- Human-in-the-Loop: Destructive actions require approval
+- Dry-Run Mode: Test fixes without applying
+- Rollback Capability: Automatic rollback on failure
+- Action Logging: Every action logged to Azure Monitor
+- Rate Limiting: Max 5 remediation attempts per hour
+- Scope Restriction: Only authorized subscriptions/RGs
 
 ### Compliance & Audit
-- **SOC 2 Type II**: Compliant logging and access controls
-- **GDPR**: No PII in logs (sanitized)
-- **ISO 27001**: Encrypted at rest and in transit
-- **Audit Trail**: Immutable logs for 90+ days
+- SOC 2 Type II: Compliant logging and access controls
+- GDPR: No PII in logs (sanitized)
+- ISO 27001: Encrypted at rest and in transit
+- Audit Trail: Immutable logs for 90+ days
 
 ---
 
@@ -298,27 +298,27 @@ Closure Process
 
 | Layer | Technology |
 |-------|-----------|
-| **Runtime** | Python 3.11+ |
-| **Framework** | FastAPI + Async |
-| **Azure SDK** | azure-identity, azure-mgmt-* |
-| **AI/ML** | OpenAI GPT-4, LangChain |
-| **Observability** | Prometheus, Grafana, Azure Monitor |
-| **Logging** | Structlog (JSON) |
-| **Testing** | Pytest, Mock Azure APIs |
-| **CI/CD** | GitHub Actions, Azure DevOps |
+| Runtime | Python 3.11+ |
+| Framework | FastAPI + Async |
+| Azure SDK | azure-identity, azure-mgmt-* |
+| AI/ML | OpenAI GPT-4, LangChain |
+| Observability | Prometheus, Grafana, Azure Monitor |
+| Logging | Structlog (JSON) |
+| Testing | Pytest, Mock Azure APIs |
+| CI/CD | GitHub Actions, Azure DevOps |
 
 ---
 
 ## 📚 Key Design Principles
 
-1. **Autonomous First**: AI makes decisions, human as fallback
-2. **Safe by Default**: Dry-run mode, rollback, approval gates
-3. **Observable**: Every action logged and metered
-4. **Scalable**: Async, event-driven, multi-tenant ready
-5. **Extensible**: Plugin architecture for new diagnostics
-6. **Resilient**: Retry logic, circuit breakers, graceful degradation
+1. Autonomous First: AI makes decisions, human as fallback
+2. Safe by Default: Dry-run mode, rollback, approval gates
+3. Observable: Every action logged and metered
+4. Scalable: Async, event-driven, multi-tenant ready
+5. Extensible: Plugin architecture for new diagnostics
+6. Resilient: Retry logic, circuit breakers, graceful degradation
 
 ---
 
-**Designed and Developed by Rajan AI**  
-*Azure Expert | AI/ML Specialist | Production Systems Architect*
+Designed and Developed by Rajan Mishra  
+*Azure Solutions Architect | 29 Years Experience | Enterprise Systems Expert*

@@ -58,12 +58,12 @@ Azure Resource Data:
 {data_summary}
 
 Please provide:
-1. **Health Assessment**: Overall health status of the infrastructure
-2. **Configuration Issues**: Any misconfigurations or suboptimal settings
-3. **Performance Concerns**: Potential performance bottlenecks
-4. **Security Risks**: Security vulnerabilities or compliance issues
-5. **Cost Optimization**: Opportunities to reduce costs
-6. **Recommendations**: Top 3-5 actionable recommendations
+1. Health Assessment: Overall health status of the infrastructure
+2. Configuration Issues: Any misconfigurations or suboptimal settings
+3. Performance Concerns: Potential performance bottlenecks
+4. Security Risks: Security vulnerabilities or compliance issues
+5. Cost Optimization: Opportunities to reduce costs
+6. Recommendations: Top 3-5 actionable recommendations
 
 Format your response in a clear, structured manner suitable for technical and non-technical stakeholders.
 """

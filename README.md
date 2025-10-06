@@ -12,11 +12,11 @@ Developed by Rajan Mishra | Azure Solutions Architect | 29 Years Experience
 
 ---
 
-**Enterprise-Grade AI System for Automated Azure Support**
+Enterprise-Grade AI System for Automated Azure Support
 
 ## Executive Summary
 
-Developed by **Rajan Mishra** | Azure Solutions Architect | 29 Years Experience
+Developed by Rajan Mishra | Azure Solutions Architect | 29 Years Experience
 
 This is an enterprise-grade Agentic AI system that autonomously diagnoses and resolves Windows VM RDP connection failures (port 3389) on Microsoft Azure.
 
@@ -38,21 +38,21 @@ No Azure account needed! Run the demo immediately:- Customer downtime impacts bu
 
 git clone https://github.com/Rajanm001/agent-azur.git && cd agent-azur && .\deploy.batAI-powered autonomous agent that:
 
-```- ✅ Diagnoses root cause in **8 seconds**
+```- ✅ Diagnoses root cause in 8 seconds
 
-- ✅ Applies remediation in **12 seconds**  
+- ✅ Applies remediation in 12 seconds  
 
-```bash- ✅ Validates fix in **4 seconds**
+```bash- ✅ Validates fix in 4 seconds
 
-# Linux/macOS - One command setup- ✅ Total resolution time: **34 seconds average**
+# Linux/macOS - One command setup- ✅ Total resolution time: 34 seconds average
 
-git clone https://github.com/Rajanm001/agent-azur.git && cd agent-azur && chmod +x deploy.sh && ./deploy.sh- ✅ Auto-resolution rate: **89.8%**
+git clone https://github.com/Rajanm001/agent-azur.git && cd agent-azur && chmod +x deploy.sh && ./deploy.sh- ✅ Auto-resolution rate: 89.8%
 
-```- ✅ Cost per resolution: **$0.03**
+```- ✅ Cost per resolution: $0.03
 
 
 
-**What happens automatically:**---
+What happens automatically:---
 
 1. ✅ Creates virtual environment
 
@@ -66,7 +66,7 @@ git clone https://github.com/Rajanm001/agent-azur.git && cd agent-azur && chmod 
 
 | Requirement | Status | Implementation |
 
-**Total setup time: 30 seconds**|------------|--------|----------------|
+Total setup time: 30 seconds|------------|--------|----------------|
 
 | Reference Architecture | Complete | See [architecture_diagram.md](./architecture_diagram.md) |
 
@@ -78,7 +78,7 @@ git clone https://github.com/Rajanm001/agent-azur.git && cd agent-azur && chmod 
 
 | Observability & Metrics | Complete | Prometheus + Azure Monitor integration |
 
-This is an **enterprise-grade Agentic AI system** that autonomously diagnoses and resolves Windows VM RDP connection failures (port 3389) on Microsoft Azure.| Working Code | Complete | Production-ready, zero warnings, fully typed |
+This is an enterprise-grade Agentic AI system that autonomously diagnoses and resolves Windows VM RDP connection failures (port 3389) on Microsoft Azure.| Working Code | Complete | Production-ready, zero warnings, fully typed |
 
 
 
@@ -90,15 +90,15 @@ This is an **enterprise-grade Agentic AI system** that autonomously diagnoses an
 
 |--------|---------------|-----------|-------------|
 
-| **Resolution Time** | 15-30 minutes | 34 seconds | **99.3% faster** |### High-Level Design
+| Resolution Time | 15-30 minutes | 34 seconds | 99.3% faster |### High-Level Design
 
-| **Cost Per Ticket** | $45 | $0.03 | **99.7% cheaper** |
+| Cost Per Ticket | $45 | $0.03 | 99.7% cheaper |
 
-| **Success Rate** | 60-70% | 89.8% | **29% higher** |```
+| Success Rate | 60-70% | 89.8% | 29% higher |```
 
-| **Availability** | 8x5 business hours | 24x7x365 | **Continuous** |┌──────────────────────────────────────────────────────────────┐
+| Availability | 8x5 business hours | 24x7x365 | Continuous |┌──────────────────────────────────────────────────────────────┐
 
-| **Scalability** | Linear (hire more) | Exponential | **Unlimited** |│                    CUSTOMER / SUPPORT ENTRY                  │
+| Scalability | Linear (hire more) | Exponential | Unlimited |│                    CUSTOMER / SUPPORT ENTRY                  │
 
 │         Azure Portal │ Chat Bot │ ServiceNow Integration     │
 
@@ -106,19 +106,19 @@ This is an **enterprise-grade Agentic AI system** that autonomously diagnoses an
 
                          │
 
-✅ **AI-Powered Diagnostics** - OpenAI GPT-4 analyzes Azure telemetry for root cause                           ▼
+✅ AI-Powered Diagnostics - OpenAI GPT-4 analyzes Azure telemetry for root cause                           ▼
 
-✅ **Automated Remediation** - Executes fixes via Azure SDK without human intervention  ┌──────────────────────────────────────────────────────────────┐
+✅ Automated Remediation - Executes fixes via Azure SDK without human intervention  ┌──────────────────────────────────────────────────────────────┐
 
-✅ **Multi-Agent Architecture** - 4 specialized agents (Orchestrator, Diagnostic, Remediation, Validation)  │              AI ORCHESTRATOR (Central Agent)                 │
+✅ Multi-Agent Architecture - 4 specialized agents (Orchestrator, Diagnostic, Remediation, Validation)  │              AI ORCHESTRATOR (Central Agent)                 │
 
-✅ **3 Authentication Modes** - MOCK (offline demo), CLI (az login), Service Principal (production)  │  • Ticket ingestion & prioritization                         │
+✅ 3 Authentication Modes - MOCK (offline demo), CLI (az login), Service Principal (production)  │  • Ticket ingestion & prioritization                         │
 
-✅ **Enterprise Security** - RBAC, audit logs, HITL approval gates, automated rollback  │  • Context gathering from Azure APIs                         │
+✅ Enterprise Security - RBAC, audit logs, HITL approval gates, automated rollback  │  • Context gathering from Azure APIs                         │
 
-✅ **Production Monitoring** - Prometheus metrics + structured JSON logging  │  • OpenAI GPT-4 decision making                             │
+✅ Production Monitoring - Prometheus metrics + structured JSON logging  │  • OpenAI GPT-4 decision making                             │
 
-✅ **Zero Configuration** - Works out-of-the-box in MOCK mode  │  • Workflow coordination & logging                           │
+✅ Zero Configuration - Works out-of-the-box in MOCK mode  │  • Workflow coordination & logging                           │
 
 └────────────┬────────────────────┬────────────────────────────┘
 
@@ -134,7 +134,7 @@ See it in action:     │                │    │                │
 
      │• VM State      │    │• Start VM      │
 
-**Step 1: Clone & Run**     │• NSG Rules     │    │• Fix NSG       │
+Step 1: Clone & Run     │• NSG Rules     │    │• Fix NSG       │
 
 ```bash     │• RDP Service   │    │• Restart RDP   │
 
@@ -150,7 +150,7 @@ cd agent-azur     │• Connectivity  │    │• Rollback      │
 
                          │
 
-**Step 2: Watch the Magic**                         ▼
+Step 2: Watch the Magic                         ▼
 
 ```              ┌──────────────────────┐
 
@@ -182,7 +182,7 @@ cd agent-azur     │• Connectivity  │    │• Rollback      │
 
 🔍 Root Cause: NSG missing RDP rule (port 3389)
 
-📊 Confidence: 95%**See [architecture_diagram.md](./architecture_diagram.md) for complete architecture**
+📊 Confidence: 95%See [architecture_diagram.md](./architecture_diagram.md) for complete architecture
 
 
 
@@ -198,13 +198,13 @@ cd agent-azur     │• Connectivity  │    │• Rollback      │
 
 
 
-✨ RESOLUTION COMPLETE - Total Time: 34 seconds- **Python 3.11+**
+✨ RESOLUTION COMPLETE - Total Time: 34 seconds- Python 3.11+
 
-```- **Azure Subscription** with proper RBAC roles
+```- Azure Subscription with proper RBAC roles
 
-- **OpenAI API Key** (GPT-4 recommended)
+- OpenAI API Key (GPT-4 recommended)
 
-**Step 3: View Metrics**- **Azure CLI** OR Service Principal credentials
+Step 3: View Metrics- Azure CLI OR Service Principal credentials
 
 Open http://localhost:8000 in your browser
 
@@ -306,7 +306,7 @@ cd "Rajan_AI_Agentic_Azure_Supportability"
 
   ✓ Power State: Running
 
-**Complete Architecture**: [architecture_diagram.md](./architecture_diagram.md)  ✗ NSG Rule 3389: MISSING
+Complete Architecture: [architecture_diagram.md](./architecture_diagram.md)  ✗ NSG Rule 3389: MISSING
 
   ✓ RDP Service: Running
 
@@ -322,17 +322,17 @@ cd "Rajan_AI_Agentic_Azure_Supportability"
 
 |---|------------|--------|----------|  ✓ NSG rule added: AllowRDP-Inbound
 
-| 1 | **Reference Architecture** | ✅ Complete | [architecture_diagram.md](./architecture_diagram.md) - Multi-agent system with diagrams |  
+| 1 | Reference Architecture | ✅ Complete | [architecture_diagram.md](./architecture_diagram.md) - Multi-agent system with diagrams |  
 
-| 2 | **Customer Flow (2+ pages)** | ✅ Complete | [architecture_diagram.md](./architecture_diagram.md) - 6-phase flow, 298 lines |[VALIDATION] Testing connectivity...
+| 2 | Customer Flow (2+ pages) | ✅ Complete | [architecture_diagram.md](./architecture_diagram.md) - 6-phase flow, 298 lines |[VALIDATION] Testing connectivity...
 
-| 3 | **RDP Troubleshooting Play** | ✅ Complete | 5 hypotheses documented below + code in [diagnostic_agent.py](./src/agents/diagnostic_agent.py) |  ✓ Port 3389: OPEN
+| 3 | RDP Troubleshooting Play | ✅ Complete | 5 hypotheses documented below + code in [diagnostic_agent.py](./src/agents/diagnostic_agent.py) |  ✓ Port 3389: OPEN
 
-| 4 | **Security & Governance** | ✅ Complete | [SECURITY_GOVERNANCE.md](./docs/SECURITY_GOVERNANCE.md) - Enterprise-grade, 333 lines |  ✓ RDP Handshake: SUCCESS
+| 4 | Security & Governance | ✅ Complete | [SECURITY_GOVERNANCE.md](./docs/SECURITY_GOVERNANCE.md) - Enterprise-grade, 333 lines |  ✓ RDP Handshake: SUCCESS
 
-| 5 | **Observability & Metrics** | ✅ Complete | [metrics.py](./src/metrics.py) - Prometheus on port 8000 |
+| 5 | Observability & Metrics | ✅ Complete | [metrics.py](./src/metrics.py) - Prometheus on port 8000 |
 
-| 6 | **Working Code** | ✅ Complete | All code tested, zero warnings, production-ready |======================================================================
+| 6 | Working Code | ✅ Complete | All code tested, zero warnings, production-ready |======================================================================
 
   ✅ Issue Resolved - Time: 34s
 
@@ -352,19 +352,19 @@ cd "Rajan_AI_Agentic_Azure_Supportability"
 
 |---|-----------|------------------|---------------|------|```
 
-| **1** | **NSG Blocking Port 3389** | Check NSG inbound rules for port 3389 | Add Allow-RDP-3389 rule with priority 100 | 8s |Rajan_AI_Agentic_Azure_Supportability/
+| 1 | NSG Blocking Port 3389 | Check NSG inbound rules for port 3389 | Add Allow-RDP-3389 rule with priority 100 | 8s |Rajan_AI_Agentic_Azure_Supportability/
 
-| **2** | **VM Powered Off** | Query VM power state via Azure API | Start VM using `vm.start()` | 12s |│
+| 2 | VM Powered Off | Query VM power state via Azure API | Start VM using `vm.start()` | 12s |│
 
-| **3** | **RDP Service Down** | Check TermService status via Run Command | Restart service: `Restart-Service TermService` | 6s |├── README.md                              ← This file
+| 3 | RDP Service Down | Check TermService status via Run Command | Restart service: `Restart-Service TermService` | 6s |├── README.md                              ← This file
 
-| **4** | **Windows Firewall Blocking** | Query firewall rules for RDP exception | Enable RDP: `Enable-NetFirewallRule -Name RemoteDesktop*` | 5s |├── architecture_diagram.md                ← Complete architecture & flows
+| 4 | Windows Firewall Blocking | Query firewall rules for RDP exception | Enable RDP: `Enable-NetFirewallRule -Name RemoteDesktop*` | 5s |├── architecture_diagram.md                ← Complete architecture & flows
 
-| **5** | **Network Connectivity Issue** | Test TCP 3389 reachability + DNS | Fix routing/DNS configuration | 10s |├── requirements.txt                       ← Python dependencies
+| 5 | Network Connectivity Issue | Test TCP 3389 reachability + DNS | Fix routing/DNS configuration | 10s |├── requirements.txt                       ← Python dependencies
 
 ├── .env.example                           ← Environment template
 
-**Implementation**: [src/agents/diagnostic_agent.py](./src/agents/diagnostic_agent.py)├── setup_env.bat                          ← Windows setup script
+Implementation: [src/agents/diagnostic_agent.py](./src/agents/diagnostic_agent.py)├── setup_env.bat                          ← Windows setup script
 
 ├── run_app.bat                            ← Windows run script
 
@@ -428,15 +428,15 @@ az account set --subscription YOUR_SUBSCRIPTION_IDThe system tests multiple hypo
 
 AZURE_AUTH_MODE=CLI|----------|-----------|------------------|-----------------|------|
 
-AZURE_SUBSCRIPTION_ID=your-subscription-id| **1** | **NSG Blocking 3389** | Scan NSG inbound rules for port 3389 | Add security rule: `AllowRDP` | 10s |
+AZURE_SUBSCRIPTION_ID=your-subscription-id| 1 | NSG Blocking 3389 | Scan NSG inbound rules for port 3389 | Add security rule: `AllowRDP` | 10s |
 
-| **2** | **VM Stopped** | Check `power_state` via Compute API | Start VM via `begin_start()` | 60-120s |
+| 2 | VM Stopped | Check `power_state` via Compute API | Start VM via `begin_start()` | 60-120s |
 
-# Run| **3** | **RDP Service Down** | RunCommand: `Get-Service TermService` | RunCommand: `Restart-Service` | 15-30s |
+# Run| 3 | RDP Service Down | RunCommand: `Get-Service TermService` | RunCommand: `Restart-Service` | 15-30s |
 
-python src/main.py| **4** | **Firewall Blocking** | RunCommand: `Get-NetFirewallRule` | Enable firewall rule | 10s |
+python src/main.py| 4 | Firewall Blocking | RunCommand: `Get-NetFirewallRule` | Enable firewall rule | 10s |
 
-```| **5** | **Network Issue** | Network Watcher connectivity test | Route/peering investigation | Manual |
+```| 5 | Network Issue | Network Watcher connectivity test | Route/peering investigation | Manual |
 
 
 
@@ -476,7 +476,7 @@ python src/main.py```
 
 ---
 
-**Detailed Instructions**: [QUICK_START.md](./QUICK_START.md)
+Detailed Instructions: [QUICK_START.md](./QUICK_START.md)
 
 ## 🛡️ Safety, Security & Governance
 
@@ -492,21 +492,21 @@ python src/main.py```
 
 |-----------|-----------|---------|    │
 
-| **Language** | Python 3.11+ | Core application |    ├─▶ RBAC Roles:
+| Language | Python 3.11+ | Core application |    ├─▶ RBAC Roles:
 
-| **AI Model** | OpenAI GPT-4 (gpt-4o-mini) | Intelligent diagnostics |    │   ├─ Reader (for diagnostics)
+| AI Model | OpenAI GPT-4 (gpt-4o-mini) | Intelligent diagnostics |    │   ├─ Reader (for diagnostics)
 
-| **Azure SDK** | azure-identity, azure-mgmt-* | Azure resource management |    │   ├─ Contributor (for VM operations)
+| Azure SDK | azure-identity, azure-mgmt-* | Azure resource management |    │   ├─ Contributor (for VM operations)
 
-| **API Framework** | FastAPI | REST API (ready for integration) |    │   └─ Network Contributor (for NSG changes)
+| API Framework | FastAPI | REST API (ready for integration) |    │   └─ Network Contributor (for NSG changes)
 
-| **Validation** | Pydantic | Type-safe data validation |    │
+| Validation | Pydantic | Type-safe data validation |    │
 
-| **Monitoring** | Prometheus | Metrics collection |    └─▶ Scope:
+| Monitoring | Prometheus | Metrics collection |    └─▶ Scope:
 
-| **Logging** | Structlog | JSON structured logs |        ├─ Subscription: 76dfe244-9ff7-4423-90f8-2165d5ec144d
+| Logging | Structlog | JSON structured logs |        ├─ Subscription: 76dfe244-9ff7-4423-90f8-2165d5ec144d
 
-| **Testing** | Pytest | Unit and integration tests |        └─ Resource Groups: rg-production, rg-development
+| Testing | Pytest | Unit and integration tests |        └─ Resource Groups: rg-production, rg-development
 
 ```
 
@@ -514,11 +514,11 @@ python src/main.py```
 
 ### Guardrails & Safety Mechanisms
 
-Access at: **http://localhost:8000/metrics**
+Access at: http://localhost:8000/metrics
 
-1. **Pre-flight Validation**
+1. Pre-flight Validation
 
-**Counters:**   - Backup current configuration before changes
+Counters:   - Backup current configuration before changes
 
 - `rdp_issues_detected_total` - Total RDP issues found   - Validate permissions and scope
 
@@ -526,7 +526,7 @@ Access at: **http://localhost:8000/metrics**
 
 - `auto_resolutions_failed_total` - Failed attempts
 
-- `escalated_to_human_total` - Required human intervention2. **Human-in-the-Loop (Optional)**
+- `escalated_to_human_total` - Required human intervention2. Human-in-the-Loop (Optional)
 
 - `openai_api_calls_total` - OpenAI API usage   - Configurable approval gates for:
 
@@ -534,11 +534,11 @@ Access at: **http://localhost:8000/metrics**
 
      - Network security changes
 
-**Histograms:**     - Destructive operations
+Histograms:     - Destructive operations
 
 - `resolution_duration_seconds` - End-to-end resolution time
 
-- `diagnostic_duration_seconds` - Diagnostic phase time3. **Automatic Rollback**
+- `diagnostic_duration_seconds` - Diagnostic phase time3. Automatic Rollback
 
 - `remediation_duration_seconds` - Fix application time   - Monitors service health post-fix
 
@@ -546,9 +546,9 @@ Access at: **http://localhost:8000/metrics**
 
    - Preserves original state backup
 
-**Gauges:**
+Gauges:
 
-- `active_incidents` - Currently active issues4. **Rate Limiting**
+- `active_incidents` - Currently active issues4. Rate Limiting
 
 - `vms_monitored_total` - VMs under monitoring   - Max 5 remediation attempts per hour per VM
 
@@ -566,55 +566,55 @@ Access at: **http://localhost:8000/metrics**
 
 ### Authentication (3-Tier)|--------------------|----------------|
 
-1. **Managed Identity** (Production - Recommended)| **SOC 2 Type II** | Complete audit trail in Azure Monitor |
+1. Managed Identity (Production - Recommended)| SOC 2 Type II | Complete audit trail in Azure Monitor |
 
-2. **Service Principal** (CI/CD pipelines)| **GDPR** | Data anonymization, no PII in logs |
+2. Service Principal (CI/CD pipelines)| GDPR | Data anonymization, no PII in logs |
 
-3. **Azure CLI** (Development only)| **ISO 27001** | Encrypted at rest/transit, access controls |
+3. Azure CLI (Development only)| ISO 27001 | Encrypted at rest/transit, access controls |
 
-| **HIPAA** | PHI filtering for healthcare workloads |
+| HIPAA | PHI filtering for healthcare workloads |
 
 ### RBAC Permissions (Least Privilege)
 
-- **Reader**: Read VM and NSG state---
+- Reader: Read VM and NSG state---
 
-- **Virtual Machine Contributor**: Start/stop VMs only
+- Virtual Machine Contributor: Start/stop VMs only
 
-- **Network Contributor**: Modify NSG rules for RDP## 📊 Observability & Metrics
+- Network Contributor: Modify NSG rules for RDP## 📊 Observability & Metrics
 
-- **Monitoring Contributor**: Write logs and metrics
+- Monitoring Contributor: Write logs and metrics
 
 ### Prometheus Metrics (Port 8000)
 
 ### Safety Guardrails
 
-✅ **Pre-flight Checks** - Validate state before changes  ```prometheus
+✅ Pre-flight Checks - Validate state before changes  ```prometheus
 
-✅ **Human-in-the-Loop** - Approval required for 5 high-risk actions  # Issue Detection
+✅ Human-in-the-Loop - Approval required for 5 high-risk actions  # Issue Detection
 
-✅ **Automated Rollback** - Restore previous state on failure  rdp_issues_detected_total{root_cause="nsg_blocking"} 67
+✅ Automated Rollback - Restore previous state on failure  rdp_issues_detected_total{root_cause="nsg_blocking"} 67
 
-✅ **Rate Limiting** - 5 resolutions/hour per VM  rdp_issues_detected_total{root_cause="vm_stopped"} 18
+✅ Rate Limiting - 5 resolutions/hour per VM  rdp_issues_detected_total{root_cause="vm_stopped"} 18
 
-✅ **Circuit Breaker** - Auto-pause after 3 consecutive failures  rdp_issues_detected_total{root_cause="rdp_service_down"} 11
+✅ Circuit Breaker - Auto-pause after 3 consecutive failures  rdp_issues_detected_total{root_cause="rdp_service_down"} 11
 
-✅ **Audit Logging** - Complete audit trail in JSON format  
+✅ Audit Logging - Complete audit trail in JSON format  
 
 # Resolution Success
 
 ### Complianceauto_resolutions_successful_total 132
 
-- ✅ **SOC 2 Type II** - Audit logging, access controlsauto_resolutions_failed_total 15
+- ✅ SOC 2 Type II - Audit logging, access controlsauto_resolutions_failed_total 15
 
-- ✅ **GDPR Article 32** - Data encryption, minimizationescalated_to_human_total 15
+- ✅ GDPR Article 32 - Data encryption, minimizationescalated_to_human_total 15
 
-- ✅ **ISO 27001** - ISMS, risk management
+- ✅ ISO 27001 - ISMS, risk management
 
-- ✅ **HIPAA** - PHI protection (if applicable)# Performance
+- ✅ HIPAA - PHI protection (if applicable)# Performance
 
 mean_time_to_resolve_seconds_sum 4488.0
 
-**Full Details**: [SECURITY_GOVERNANCE.md](./docs/SECURITY_GOVERNANCE.md)mean_time_to_resolve_seconds_count 132
+Full Details: [SECURITY_GOVERNANCE.md](./docs/SECURITY_GOVERNANCE.md)mean_time_to_resolve_seconds_count 132
 
 diagnostic_duration_seconds_avg 8.2
 
@@ -640,7 +640,7 @@ openai_api_calls_total 147
 
 
 
-**Windows:**```kusto
+Windows:```kusto
 
 ```bashAzureRDPAgentLogs
 
@@ -654,7 +654,7 @@ cd agent-azur| where EventType == "resolution_success"
 
 
 
-**Linux/macOS:**---
+Linux/macOS:---
 
 ```bash
 
@@ -666,23 +666,23 @@ chmod +x deploy.sh### OpenAI GPT-4 Usage
 
 ./deploy.sh
 
-```**Model**: `gpt-4-0125-preview`  
+```Model: `gpt-4-0125-preview`  
 
-**Temperature**: 0.7 (balanced)  
+Temperature: 0.7 (balanced)  
 
-### Manual Installation**Max Tokens**: 2000  
+### Manual InstallationMax Tokens: 2000  
 
 
 
-```bash**Use Cases**:
+```bashUse Cases:
 
-# 1. Clone repository1. **Root Cause Analysis**: Correlates diagnostic evidence
+# 1. Clone repository1. Root Cause Analysis: Correlates diagnostic evidence
 
-git clone https://github.com/Rajanm001/agent-azur.git2. **Fix Planning**: Generates step-by-step remediation plans
+git clone https://github.com/Rajanm001/agent-azur.git2. Fix Planning: Generates step-by-step remediation plans
 
-cd agent-azur3. **Risk Assessment**: Evaluates potential side effects
+cd agent-azur3. Risk Assessment: Evaluates potential side effects
 
-4. **Documentation**: Auto-generates incident reports
+4. Documentation: Auto-generates incident reports
 
 # 2. Create virtual environment
 
@@ -720,7 +720,7 @@ python src/main.py{diagnostic_results}
 
 Be concise, technical, and actionable.
 
-**Detailed Guide**: [INSTALLATION.md](./INSTALLATION.md)"""
+Detailed Guide: [INSTALLATION.md](./INSTALLATION.md)"""
 
 ```
 
@@ -744,7 +744,7 @@ python FINAL_VALIDATION.py```bash
 
 pytest src/tests/ -v --cov=src
 
-**Expected Output:**
+Expected Output:
 
 ```# Expected output:
 
@@ -778,15 +778,15 @@ pytest src/tests/ -v --cov=src
 
   ✅ Security & Governance                       ✅ SatisfiedAll code follows:
 
-  ✅ Observability & Metrics                     ✅ Satisfied- **PEP 8** style guide
+  ✅ Observability & Metrics                     ✅ Satisfied- PEP 8 style guide
 
-  ✅ Working Code                                ✅ Satisfied- **Type hints** on all functions
+  ✅ Working Code                                ✅ Satisfied- Type hints on all functions
 
-- **Docstrings** with examples
+- Docstrings with examples
 
-╔═══════════════════════════════════════════════════════════╗- **Error handling** with specific exceptions
+╔═══════════════════════════════════════════════════════════╗- Error handling with specific exceptions
 
-║   ✅  ALL CHECKS PASSED - READY FOR SUBMISSION           ║- **Logging** at appropriate levels
+║   ✅  ALL CHECKS PASSED - READY FOR SUBMISSION           ║- Logging at appropriate levels
 
 ╚═══════════════════════════════════════════════════════════╝
 
@@ -806,17 +806,17 @@ python -m pytest tests/ -v
 
 |--------|-------|--------|
 
-### Run MOCK Mode Test| **Auto-Resolution Rate** | 89.8% | ≥85% ✅ |
+### Run MOCK Mode Test| Auto-Resolution Rate | 89.8% | ≥85% ✅ |
 
-| **Mean Time to Resolve** | 34s | ≤60s ✅ |
+| Mean Time to Resolve | 34s | ≤60s ✅ |
 
-```bash| **False Positive Rate** | 2.1% | ≤5% ✅ |
+```bash| False Positive Rate | 2.1% | ≤5% ✅ |
 
-python src/main.py| **API Error Rate** | 0.3% | ≤1% ✅ |
+python src/main.py| API Error Rate | 0.3% | ≤1% ✅ |
 
-```| **Cost per Resolution** | $0.03 | ≤$0.10 ✅ |
+```| Cost per Resolution | $0.03 | ≤$0.10 ✅ |
 
-| **Customer Satisfaction** | 4.8/5.0 | ≥4.5 ✅ |
+| Customer Satisfaction | 4.8/5.0 | ≥4.5 ✅ |
 
 ---
 
@@ -882,17 +882,17 @@ kind: Deployment
 
 |-------|------|------------|    spec:
 
-| **Data Collection** | 2s | 6% |      containers:
+| Data Collection | 2s | 6% |      containers:
 
-| **AI Diagnostic Analysis** | 8s | 24% |      - name: agent
+| AI Diagnostic Analysis | 8s | 24% |      - name: agent
 
-| **Remediation Execution** | 12s | 35% |        image: myregistry.azurecr.io/azure-rdp-agent:latest
+| Remediation Execution | 12s | 35% |        image: myregistry.azurecr.io/azure-rdp-agent:latest
 
-| **Validation** | 4s | 12% |        envFrom:
+| Validation | 4s | 12% |        envFrom:
 
-| **Logging & Metrics** | 8s | 23% |        - secretRef:
+| Logging & Metrics | 8s | 23% |        - secretRef:
 
-| **Total** | **34s** | **100%** |            name: azure-credentials
+| Total | 34s | 100% |            name: azure-credentials
 
 ```
 
@@ -900,13 +900,13 @@ kind: Deployment
 
 ### Option 4: Azure Functions (Event-Driven)
 
-- **P50**: 28 seconds
+- P50: 28 seconds
 
-- **P75**: 42 seconds```bash
+- P75: 42 seconds```bash
 
-- **P95**: 62 secondsfunc azure functionapp publish my-rdp-function --python
+- P95: 62 secondsfunc azure functionapp publish my-rdp-function --python
 
-- **P99**: 89 seconds```
+- P99: 89 seconds```
 
 
 
@@ -914,31 +914,31 @@ kind: Deployment
 
 
 
-**Per Ticket Cost Comparison:**## 🤝 Support & Contact
+Per Ticket Cost Comparison:## 🤝 Support & Contact
 
 
 
-| Component | Manual | AI System | Savings |**Project Author**: Rajan AI  
+| Component | Manual | AI System | Savings |Project Author: Rajan AI  
 
-|-----------|--------|-----------|---------|**Role**: Azure Solutions Architect | AI/ML Specialist  
+|-----------|--------|-----------|---------|Role: Azure Solutions Architect | AI/ML Specialist  
 
-| Labor (20 min @ $45/hr) | $15.00 | $0.00 | 100% |**Experience**: 29 years in enterprise cloud systems  
+| Labor (20 min @ $45/hr) | $15.00 | $0.00 | 100% |Experience: 29 years in enterprise cloud systems  
 
 | OpenAI API (~2K tokens) | $0.00 | $0.02 | - |
 
 | Azure API calls (6 calls) | $0.00 | $0.01 | - |For questions or enterprise licensing:
 
-| **Total** | **$15.00** | **$0.03** | **99.8%** |- 📧 Email: rajan.ai@example.com
+| Total | $15.00 | $0.03 | 99.8% |- 📧 Email: rajan.ai@example.com
 
 - 💼 LinkedIn: [linkedin.com/in/rajan-ai](#)
 
-**Annual Savings (1,000 tickets/month):**- 🐙 GitHub: [github.com/rajan-ai](#)
+Annual Savings (1,000 tickets/month):- 🐙 GitHub: [github.com/rajan-ai](#)
 
 - Manual: $15,000 × 12 = $180,000/year
 
 - AI System: $30 × 12 = $360/year---
 
-- **Savings: $179,640/year (99.8%)**
+- Savings: $179,640/year (99.8%)
 
 ## 📚 Additional Documentation
 
@@ -962,19 +962,19 @@ kind: Deployment
 
 | [architecture_diagram.md](./architecture_diagram.md) | System architecture & customer flow | 18 KB |
 
-| [SECURITY_GOVERNANCE.md](./docs/SECURITY_GOVERNANCE.md) | Security, safety, governance | 13 KB |✅ **All client requirements exceeded**  
+| [SECURITY_GOVERNANCE.md](./docs/SECURITY_GOVERNANCE.md) | Security, safety, governance | 13 KB |✅ All client requirements exceeded  
 
-| [PROJECT_SUMMARY.md](./PROJECT_SUMMARY.md) | Executive summary | 23 KB |✅ **Production-grade code quality (0 warnings)**  
+| [PROJECT_SUMMARY.md](./PROJECT_SUMMARY.md) | Executive summary | 23 KB |✅ Production-grade code quality (0 warnings)  
 
-| [COMPLETION_REPORT.md](./COMPLETION_REPORT.md) | Comprehensive project report | 29 KB |✅ **Comprehensive documentation (≥2 pages per requirement)**  
+| [COMPLETION_REPORT.md](./COMPLETION_REPORT.md) | Comprehensive project report | 29 KB |✅ Comprehensive documentation (≥2 pages per requirement)  
 
-| [SUBMISSION_CHECKLIST.md](./SUBMISSION_CHECKLIST.md) | Requirements verification | 15 KB |✅ **Working demonstration included**  
+| [SUBMISSION_CHECKLIST.md](./SUBMISSION_CHECKLIST.md) | Requirements verification | 15 KB |✅ Working demonstration included  
 
-| [CONTRIBUTING.md](./CONTRIBUTING.md) | Contribution guidelines | 3 KB |✅ **Enterprise security & compliance**  
+| [CONTRIBUTING.md](./CONTRIBUTING.md) | Contribution guidelines | 3 KB |✅ Enterprise security & compliance  
 
-| [GITHUB_SETUP.md](./GITHUB_SETUP.md) | Repository management | 7 KB |✅ **Real-world performance metrics**  
+| [GITHUB_SETUP.md](./GITHUB_SETUP.md) | Repository management | 7 KB |✅ Real-world performance metrics  
 
-| **Total Documentation** | | **154 KB** |
+| Total Documentation | | 154 KB |
 
 ---
 
@@ -984,15 +984,15 @@ kind: Deployment
 
 ## 🚀 Deployment Options
 
-**Proprietary - Rajan AI © 2025**
+Proprietary - Rajan AI © 2025
 
 ### Option 1: Azure Container Instances (Recommended)
 
-- **Cost**: ~$30/monthThis code is provided for evaluation purposes.  
+- Cost: ~$30/monthThis code is provided for evaluation purposes.  
 
-- **Setup Time**: 10 minutesProduction deployment requires licensing agreement.
+- Setup Time: 10 minutesProduction deployment requires licensing agreement.
 
-- **Best For**: Small to medium deployments
+- Best For: Small to medium deployments
 
 ---
 
@@ -1016,27 +1016,27 @@ az container create \## 🎯 Success Metrics
 
 ### Option 2: Azure Kubernetes Service (AKS)| Observability/Metrics | ✅ Yes | Prometheus + Azure Monitor integration |
 
-- **Cost**: ~$150/month| Working code | ✅ Yes | src/ directory with all agents |
+- Cost: ~$150/month| Working code | ✅ Yes | src/ directory with all agents |
 
-- **Setup Time**: 30 minutes| Zero warnings | ✅ Yes | Pylance 0 errors, Pylint 9.8/10 |
+- Setup Time: 30 minutes| Zero warnings | ✅ Yes | Pylance 0 errors, Pylint 9.8/10 |
 
-- **Best For**: Large-scale production| Production ready | ✅ Yes | Tested with real Azure subscription |
+- Best For: Large-scale production| Production ready | ✅ Yes | Tested with real Azure subscription |
 
 
 
 ### Option 3: Azure Functions (Serverless)---
 
-- **Cost**: Pay-per-execution
+- Cost: Pay-per-execution
 
-- **Setup Time**: 15 minutes**Last Updated**: October 5, 2025  
+- Setup Time: 15 minutesLast Updated: October 5, 2025  
 
-- **Best For**: Variable/unpredictable load**Version**: 1.0.0  
+- Best For: Variable/unpredictable loadVersion: 1.0.0  
 
-**Status**: ✅ PRODUCTION READY
+Status: ✅ PRODUCTION READY
 
 ---
 
-**Built with ❤️ by Rajan AI**
+Built with ❤️ by Rajan AI
 
 ## 🤝 Contributing
 
@@ -1070,13 +1070,13 @@ git push origin feature/amazing-feature
 <details>
 <summary><b>Q: Do I need Azure credentials to try the demo?</b></summary>
 
-**A:** No! The system works in MOCK mode without any Azure credentials. Just run `.\deploy.bat` and it will use simulated data.
+A: No! The system works in MOCK mode without any Azure credentials. Just run `.\deploy.bat` and it will use simulated data.
 </details>
 
 <details>
 <summary><b>Q: How much does it cost to run in production?</b></summary>
 
-**A:** Approximately $0.03 per resolution:
+A: Approximately $0.03 per resolution:
 - OpenAI API: ~$0.02 per ticket (2,000 tokens)
 - Azure API calls: ~$0.01 per ticket
 - Infrastructure: $30-150/month depending on deployment option
@@ -1085,7 +1085,7 @@ git push origin feature/amazing-feature
 <details>
 <summary><b>Q: Is it production-ready?</b></summary>
 
-**A:** Yes! The system includes:
+A: Yes! The system includes:
 - Enterprise-grade security (RBAC, audit logs)
 - Error handling and rollback
 - Monitoring and observability
@@ -1096,7 +1096,7 @@ git push origin feature/amazing-feature
 <details>
 <summary><b>Q: What if the AI makes a mistake?</b></summary>
 
-**A:** Multiple safety layers:
+A: Multiple safety layers:
 1. Pre-flight checks before any changes
 2. Human-in-the-loop approval for high-risk actions
 3. Automated rollback on failure
@@ -1107,7 +1107,7 @@ git push origin feature/amazing-feature
 <details>
 <summary><b>Q: Can I extend it to other Azure issues?</b></summary>
 
-**A:** Absolutely! The multi-agent architecture is designed for extensibility. You can add new agents for:
+A: Absolutely! The multi-agent architecture is designed for extensibility. You can add new agents for:
 - SSH troubleshooting (port 22)
 - Load balancer issues
 - DNS resolution problems
@@ -1129,7 +1129,7 @@ Report issues: [GitHub Issues](https://github.com/Rajanm001/agent-azur/issues)
 - [Security & Governance](./docs/SECURITY_GOVERNANCE.md)
 
 ### Author
-**Rajan Mishra**  
+Rajan Mishra  
 Azure Solutions Architect | 29 Years Experience  
 GitHub: [@Rajanm001](https://github.com/Rajanm001)
 
@@ -1152,18 +1152,18 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## 📊 Project Status
 
-- ✅ **Development**: Complete
-- ✅ **Testing**: All tests passing
-- ✅ **Documentation**: Comprehensive (154 KB)
-- ✅ **Security Review**: Passed
-- ✅ **Production Ready**: Yes
-- ✅ **Client Requirements**: 6/6 satisfied
+- ✅ Development: Complete
+- ✅ Testing: All tests passing
+- ✅ Documentation: Comprehensive (154 KB)
+- ✅ Security Review: Passed
+- ✅ Production Ready: Yes
+- ✅ Client Requirements: 6/6 satisfied
 
 ---
 
 ## ⭐ Star this repository if you find it useful!
 
-**🔗 Repository**: https://github.com/Rajanm001/agent-azur
+🔗 Repository: https://github.com/Rajanm001/agent-azur
 
 ---
 

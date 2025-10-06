@@ -8,9 +8,9 @@ No Azure secrets? No problem! Choose from 3 authentication modes based on what y
 
 | Mode | When to Use | Setup Time | Requires |
 |------|-------------|------------|----------|
-| **🎭 MOCK** | Demo/testing without Azure | 30 seconds | Nothing! |
-| **💻 CLI** | You have Azure access | 2 minutes | Azure CLI + `az login` |
-| **🔐 SERVICE_PRINCIPAL** | Production deployment | 5 minutes | Azure subscription + credentials |
+| 🎭 MOCK | Demo/testing without Azure | 30 seconds | Nothing! |
+| 💻 CLI | You have Azure access | 2 minutes | Azure CLI + `az login` |
+| 🔐 SERVICE_PRINCIPAL | Production deployment | 5 minutes | Azure subscription + credentials |
 
 ---
 
@@ -20,18 +20,18 @@ Perfect for testing, demos, or when you don't have Azure credentials.
 
 ### Steps:
 
-1. **Open your `.env` file** and add:
+1. Open your `.env` file and add:
    ```bash
    AZURE_AUTH_MODE=MOCK
    OPENAI_API_KEY=sk-proj-your-key-here
    ```
 
-2. **Run the application**:
+2. Run the application:
    ```bash
    python src\main.py
    ```
 
-3. **That's it!** The system will use simulated data:
+3. That's it! The system will use simulated data:
    - ✅ 2 mock VMs (vm-web-01, vm-db-01)
    - ✅ Mock NSG rules (missing RDP - simulating the problem)
    - ✅ All agents work normally with dummy data
@@ -60,7 +60,7 @@ Perfect for testing, demos, or when you don't have Azure credentials.
 
 ## 💻 OPTION 2: CLI MODE (Recommended for Real Azure Data)
 
-Use your existing Azure login session - **no secrets needed!**
+Use your existing Azure login session - no secrets needed!
 
 ### Prerequisites:
 - Azure CLI installed ([Download here](https://aka.ms/installazurecli))
@@ -68,26 +68,26 @@ Use your existing Azure login session - **no secrets needed!**
 
 ### Steps:
 
-1. **Login to Azure CLI**:
+1. Login to Azure CLI:
    ```bash
    az login
    ```
    → Opens browser → Sign in with your Microsoft account → Success!
 
-2. **Verify your subscription**:
+2. Verify your subscription:
    ```bash
    az account show
    ```
    Copy the `"id"` value (your subscription ID)
 
-3. **Update your `.env` file**:
+3. Update your `.env` file:
    ```bash
    AZURE_AUTH_MODE=CLI
    AZURE_SUBSCRIPTION_ID=your-subscription-id-from-step-2
    OPENAI_API_KEY=sk-proj-your-key-here
    ```
 
-4. **Run the application**:
+4. Run the application:
    ```bash
    python src\main.py
    ```
@@ -107,9 +107,9 @@ Use your existing Azure login session - **no secrets needed!**
 ```
 
 ### Troubleshooting:
-- **Error: "Azure CLI not logged in"** → Run `az login` first
-- **Error: "No subscription found"** → Run `az account set --subscription <id>`
-- **Still not working?** → Falls back to MOCK mode automatically
+- Error: "Azure CLI not logged in" → Run `az login` first
+- Error: "No subscription found" → Run `az account set --subscription <id>`
+- Still not working? → Falls back to MOCK mode automatically
 
 ---
 
@@ -123,25 +123,25 @@ Full authentication with secrets - for production deployments.
 
 ### Steps:
 
-1. **Create Service Principal** (one-time setup):
+1. Create Service Principal (one-time setup):
    
-   **Option A: Via Azure CLI**
+   Option A: Via Azure CLI
    ```bash
    az ad sp create-for-rbac --name "RajanAI-AgenticApp" --role contributor --scopes /subscriptions/YOUR-SUBSCRIPTION-ID
    ```
    
-   **Option B: Via Azure Portal**
+   Option B: Via Azure Portal
    - Go to [Azure Portal](https://portal.azure.com)
-   - Navigate to **Microsoft Entra ID** (Azure AD)
-   - Go to **App registrations** → **New registration**
+   - Navigate to Microsoft Entra ID (Azure AD)
+   - Go to App registrations → New registration
    - Name: `RajanAI-AgenticApp`
-   - Under **Certificates & Secrets** → **New client secret**
+   - Under Certificates & Secrets → New client secret
    - Copy:
      - Application (client) ID
      - Directory (tenant) ID
      - Client secret value (copy immediately!)
 
-2. **Update your `.env` file**:
+2. Update your `.env` file:
    ```bash
    AZURE_AUTH_MODE=SERVICE_PRINCIPAL
    AZURE_SUBSCRIPTION_ID=76dfe244-9ff7-4423-90f8-2165d5ec144d
@@ -151,7 +151,7 @@ Full authentication with secrets - for production deployments.
    OPENAI_API_KEY=sk-proj-your-key-here
    ```
 
-3. **Run the application**:
+3. Run the application:
    ```bash
    python src\main.py
    ```
@@ -180,10 +180,10 @@ AZURE_SUBSCRIPTION_ID=...
 OPENAI_API_KEY=...
 ```
 
-The system will **automatically detect** the best mode:
-1. ✅ **Check for Service Principal** (tenant_id, client_id, client_secret)
-2. ✅ **Check for Azure CLI login** (`az account show`)
-3. ✅ **Fallback to MOCK mode** (if nothing found)
+The system will automatically detect the best mode:
+1. ✅ Check for Service Principal (tenant_id, client_id, client_secret)
+2. ✅ Check for Azure CLI login (`az account show`)
+3. ✅ Fallback to MOCK mode (if nothing found)
 
 ---
 
@@ -212,19 +212,19 @@ $env:AZURE_AUTH_MODE="SERVICE_PRINCIPAL" ; python src\main.py
 
 | Feature | MOCK | CLI | SERVICE_PRINCIPAL |
 |---------|------|-----|-------------------|
-| **Setup Time** | 30 sec | 2 min | 5 min |
-| **Azure Connection** | ❌ Offline | ✅ Real | ✅ Real |
-| **Secrets Required** | ❌ None | ❌ None | ✅ Yes |
-| **Real VM Data** | ❌ Simulated | ✅ Live | ✅ Live |
-| **Can Modify Azure** | ❌ No | ✅ Yes | ✅ Yes |
-| **Production Ready** | ❌ No | ⚠️ Dev only | ✅ Yes |
-| **Best For** | Demos, testing | Dev, exploration | Production, CI/CD |
+| Setup Time | 30 sec | 2 min | 5 min |
+| Azure Connection | ❌ Offline | ✅ Real | ✅ Real |
+| Secrets Required | ❌ None | ❌ None | ✅ Yes |
+| Real VM Data | ❌ Simulated | ✅ Live | ✅ Live |
+| Can Modify Azure | ❌ No | ✅ Yes | ✅ Yes |
+| Production Ready | ❌ No | ⚠️ Dev only | ✅ Yes |
+| Best For | Demos, testing | Dev, exploration | Production, CI/CD |
 
 ---
 
 ## 🎯 Recommended Setup by Use Case
 
-### 1. **Assignment Submission / Demo**
+### 1. Assignment Submission / Demo
 ```bash
 AZURE_AUTH_MODE=MOCK
 OPENAI_API_KEY=sk-proj-...
@@ -233,7 +233,7 @@ OPENAI_API_KEY=sk-proj-...
 ✅ Shows full workflow
 ✅ Fast and reliable
 
-### 2. **Testing with Real Azure Resources**
+### 2. Testing with Real Azure Resources
 ```bash
 AZURE_AUTH_MODE=CLI
 AZURE_SUBSCRIPTION_ID=...
@@ -243,7 +243,7 @@ OPENAI_API_KEY=sk-proj-...
 ✅ No secrets in `.env`
 ✅ Real Azure data
 
-### 3. **Production Deployment**
+### 3. Production Deployment
 ```bash
 AZURE_AUTH_MODE=SERVICE_PRINCIPAL
 AZURE_SUBSCRIPTION_ID=...
@@ -261,13 +261,13 @@ OPENAI_API_KEY=sk-proj-...
 ## 🚨 Troubleshooting
 
 ### Issue: "Authentication failed"
-**Solution:**
+Solution:
 - MOCK mode → Ignore, it's simulated
 - CLI mode → Run `az login` first
 - SERVICE_PRINCIPAL → Check credentials in `.env`
 
 ### Issue: "No VMs found"
-**Solution:**
+Solution:
 - MOCK mode → Should return 2 mock VMs (check code)
 - CLI/SERVICE_PRINCIPAL → Your subscription might be empty
   ```bash
@@ -275,13 +275,13 @@ OPENAI_API_KEY=sk-proj-...
   ```
 
 ### Issue: "Module not found: structlog"
-**Solution:**
+Solution:
 ```bash
 pip install structlog
 ```
 
 ### Issue: "OpenAI API key not set"
-**Solution:** Add to `.env`:
+Solution: Add to `.env`:
 ```bash
 OPENAI_API_KEY=sk-proj-your-actual-key-here
 ```
@@ -335,7 +335,7 @@ python -c "from src.services.azure_client import AzureClient; client = AzureClie
 ```
 
 ### Expected Output:
-**MOCK Mode:**
+MOCK Mode:
 ```json
 {
   "status": "ok",
@@ -345,7 +345,7 @@ python -c "from src.services.azure_client import AzureClient; client = AzureClie
 }
 ```
 
-**CLI/SERVICE_PRINCIPAL Mode:**
+CLI/SERVICE_PRINCIPAL Mode:
 ```json
 {
   "status": "ok",
@@ -369,13 +369,13 @@ python -c "from src.services.azure_client import AzureClient; client = AzureClie
 
 ## 📞 Need Help?
 
-- **MOCK Mode Issues** → Should always work (no dependencies)
-- **CLI Mode Issues** → Check `az login` and `az account show`
-- **SERVICE_PRINCIPAL Issues** → Verify credentials in Azure Portal
-- **OpenAI Issues** → Check API key at https://platform.openai.com
+- MOCK Mode Issues → Should always work (no dependencies)
+- CLI Mode Issues → Check `az login` and `az account show`
+- SERVICE_PRINCIPAL Issues → Verify credentials in Azure Portal
+- OpenAI Issues → Check API key at https://platform.openai.com
 
 ---
 
-**🚀 Ready to run?** Choose your mode above and follow the steps!
+🚀 Ready to run? Choose your mode above and follow the steps!
 
 *Last updated: October 2025*

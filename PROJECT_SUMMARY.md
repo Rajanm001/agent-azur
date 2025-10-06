@@ -67,19 +67,19 @@ Total Project Size: ~90 KB (code + docs)
 | 5 | Observability & Metrics | ✅ COMPLETE | `src/metrics.py` - Prometheus metrics on port 8000: 7 counters, 4 histograms, 3 gauges |
 | 6 | Working Code (Production-Ready) | ✅ COMPLETE | All code tested, type-safe (0 warnings), structured logging, error handling |
 
-**Deliverable Completeness: 100%** ✅
+Deliverable Completeness: 100% ✅
 
 ---
 
 ## 🚀 Technical Stack
 
 ### Core Technologies
-- **Python 3.13** (Type-safe with Pydantic)
-- **FastAPI** (REST API framework - ready but not yet integrated)
-- **OpenAI GPT-4** (`gpt-4o-mini`, temperature 0.7)
-- **Azure SDK** (Compute, Network, Identity)
-- **Prometheus** (Metrics on port 8000)
-- **Structlog** (JSON structured logging)
+- Python 3.13 (Type-safe with Pydantic)
+- FastAPI (REST API framework - ready but not yet integrated)
+- OpenAI GPT-4 (`gpt-4o-mini`, temperature 0.7)
+- Azure SDK (Compute, Network, Identity)
+- Prometheus (Metrics on port 8000)
+- Structlog (JSON structured logging)
 
 ### Key Dependencies
 ```txt
@@ -136,9 +136,9 @@ python-dotenv==1.1.1           # Environment config
 ```
 
 ### GPT-4 Integration
-- **Model:** `gpt-4o-mini` (cost-optimized)
-- **Temperature:** 0.7 (balanced creativity)
-- **Prompt Engineering:** 
+- Model: `gpt-4o-mini` (cost-optimized)
+- Temperature: 0.7 (balanced creativity)
+- Prompt Engineering: 
   - Diagnostic Agent: Analyzes VM state + telemetry → Root cause hypothesis
   - Remediation Agent: Plans fix steps → Generates Azure CLI commands
 
@@ -147,30 +147,30 @@ python-dotenv==1.1.1           # Environment config
 ## 🔒 Security & Governance Highlights
 
 ### Authentication (3-Tier)
-1. **Managed Identity** (Production - PREFERRED)
-2. **Service Principal** (CI/CD pipelines)
-3. **Azure CLI** (Dev-only, not for prod)
+1. Managed Identity (Production - PREFERRED)
+2. Service Principal (CI/CD pipelines)
+3. Azure CLI (Dev-only, not for prod)
 
 ### RBAC (Least Privilege)
 | Role | Scope | Justification |
 |------|-------|---------------|
-| **Reader** | Subscription | Read VM/NSG state |
-| **Virtual Machine Contributor** | Resource Group | Start/stop VMs only |
-| **Network Contributor** | NSG Resource | Add/remove RDP rules |
-| **Monitoring Contributor** | Workspace | Write logs/metrics |
+| Reader | Subscription | Read VM/NSG state |
+| Virtual Machine Contributor | Resource Group | Start/stop VMs only |
+| Network Contributor | NSG Resource | Add/remove RDP rules |
+| Monitoring Contributor | Workspace | Write logs/metrics |
 
 ### Safety Guardrails
-1. **Pre-Flight Checks** - Validate VM state before changes
-2. **HITL Approval** - Human-in-the-Loop for 5 high-risk actions (Delete VM, NSG remove rules, Reboot, VM extensions, Role assignments)
-3. **Rollback Manager** - Automated rollback on failure (restores NSG rules, reverts VM state)
-4. **Rate Limiting** - 5 resolutions/hour per VM, 10 OpenAI calls/min, 100 Azure API calls/min
-5. **Circuit Breaker** - Auto-pause after 3 consecutive failures
+1. Pre-Flight Checks - Validate VM state before changes
+2. HITL Approval - Human-in-the-Loop for 5 high-risk actions (Delete VM, NSG remove rules, Reboot, VM extensions, Role assignments)
+3. Rollback Manager - Automated rollback on failure (restores NSG rules, reverts VM state)
+4. Rate Limiting - 5 resolutions/hour per VM, 10 OpenAI calls/min, 100 Azure API calls/min
+5. Circuit Breaker - Auto-pause after 3 consecutive failures
 
 ### Compliance
-- ✅ **SOC 2 Type II** (Audit logging, access controls)
-- ✅ **GDPR Article 32** (Encryption, data minimization)
-- ✅ **ISO 27001** (ISMS, risk management)
-- ✅ **HIPAA** (PHI protection, breach notification)
+- ✅ SOC 2 Type II (Audit logging, access controls)
+- ✅ GDPR Article 32 (Encryption, data minimization)
+- ✅ ISO 27001 (ISMS, risk management)
+- ✅ HIPAA (PHI protection, breach notification)
 
 ---
 
@@ -202,7 +202,7 @@ python-dotenv==1.1.1           # Environment config
 ```
 
 ### Prometheus Metrics (Port 8000)
-**7 Counters:**
+7 Counters:
 - `rdp_issues_detected_total` - Total RDP issues detected
 - `auto_resolutions_successful_total` - Successful automated fixes
 - `auto_resolutions_failed_total` - Failed resolution attempts
@@ -211,13 +211,13 @@ python-dotenv==1.1.1           # Environment config
 - `openai_tokens_used_total` - Total tokens consumed
 - `azure_api_calls_total{operation}` - Azure API usage by operation
 
-**4 Histograms:**
+4 Histograms:
 - `resolution_duration_seconds` - End-to-end resolution time
 - `diagnostic_duration_seconds` - Time spent on diagnosis
 - `remediation_duration_seconds` - Time spent applying fixes
 - `openai_api_latency_seconds` - OpenAI API response time
 
-**3 Gauges:**
+3 Gauges:
 - `active_incidents` - Currently active RDP issues
 - `vms_monitored_total` - Total VMs under monitoring
 - `agent_uptime_seconds` - System uptime
@@ -227,10 +227,10 @@ python-dotenv==1.1.1           # Environment config
 ## 🧪 Testing Results
 
 ### Test Environment
-- **Azure Subscription:** 76dfe244-9ff7-4423-90f8-2165d5ec144d
-- **Test VMs:** 2 Windows Server 2019 VMs (vm-web-01, vm-web-02)
-- **Test Duration:** 5 days (January 20-25, 2025)
-- **Test Scenarios:** 50+ different RDP failure scenarios
+- Azure Subscription: 76dfe244-9ff7-4423-90f8-2165d5ec144d
+- Test VMs: 2 Windows Server 2019 VMs (vm-web-01, vm-web-02)
+- Test Duration: 5 days (January 20-25, 2025)
+- Test Scenarios: 50+ different RDP failure scenarios
 
 ### Test Output Sample
 ```bash
@@ -282,12 +282,12 @@ PS C:\Users\Rajan mishra Ji\assisngment 1> python src\main.py
 
 | File | Size | Description |
 |------|------|-------------|
-| **README.md** | 17 KB | Primary documentation with quick start, architecture, troubleshooting play, performance benchmarks, deployment options |
-| **architecture_diagram.md** | 18 KB | System architecture diagrams (ASCII), 6-phase customer flow, hypothesis workflow, observability dashboard |
-| **docs/SECURITY_GOVERNANCE.md** | 13 KB | Authentication methods, RBAC roles, secrets management, safety guardrails (pre-flight, HITL, rollback), audit logging, compliance (SOC 2/GDPR/ISO 27001/HIPAA), incident response playbook |
-| **PROJECT_SUMMARY.md** | THIS FILE | Executive summary, project structure, requirements checklist, technical stack, performance metrics, testing results |
+| README.md | 17 KB | Primary documentation with quick start, architecture, troubleshooting play, performance benchmarks, deployment options |
+| architecture_diagram.md | 18 KB | System architecture diagrams (ASCII), 6-phase customer flow, hypothesis workflow, observability dashboard |
+| docs/SECURITY_GOVERNANCE.md | 13 KB | Authentication methods, RBAC roles, secrets management, safety guardrails (pre-flight, HITL, rollback), audit logging, compliance (SOC 2/GDPR/ISO 27001/HIPAA), incident response playbook |
+| PROJECT_SUMMARY.md | THIS FILE | Executive summary, project structure, requirements checklist, technical stack, performance metrics, testing results |
 
-**Total Documentation: 48 KB** across 4 comprehensive files.
+Total Documentation: 48 KB across 4 comprehensive files.
 
 ---
 
@@ -340,19 +340,19 @@ curl http://localhost:8000/metrics | grep agent_uptime_seconds
 ## 🎯 Use Cases & Applications
 
 ### Primary Use Case
-**Windows VM RDP Troubleshooting**
+Windows VM RDP Troubleshooting
 - Auto-diagnose RDP connection failures (port 3389)
 - Fix NSG rules, VM power state, RDP service issues
 - Validate connectivity post-fix
 - Reduce MTTR from 15-30 min to 34 seconds
 
 ### Extended Use Cases (Future)
-1. **SSH Troubleshooting** (Linux VMs, port 22)
-2. **Load Balancer Health** (Backend pool diagnostics)
-3. **DNS Resolution Issues** (Azure DNS, Private DNS zones)
-4. **Storage Account Access** (Network rules, SAS tokens)
-5. **Azure SQL Connectivity** (Firewall rules, VNet service endpoints)
-6. **Azure App Service** (CORS, authentication, deployment issues)
+1. SSH Troubleshooting (Linux VMs, port 22)
+2. Load Balancer Health (Backend pool diagnostics)
+3. DNS Resolution Issues (Azure DNS, Private DNS zones)
+4. Storage Account Access (Network rules, SAS tokens)
+5. Azure SQL Connectivity (Firewall rules, VNet service endpoints)
+6. Azure App Service (CORS, authentication, deployment issues)
 
 ---
 
@@ -360,14 +360,14 @@ curl http://localhost:8000/metrics | grep agent_uptime_seconds
 
 | Feature | Traditional Support | Rajan AI System |
 |---------|---------------------|------------------|
-| **Time to Resolution** | 15-30 minutes | 34 seconds (99.3% faster) |
-| **Cost per Ticket** | $11.25-$22.50 | $0.03 (99.7% cheaper) |
-| **Availability** | 8x5 business hours | 24x7x365 automated |
-| **Accuracy** | 60-70% first-time-fix | 89.8% auto-resolution |
-| **Human Dependency** | 100% manual | 10.2% escalation only |
-| **Scalability** | Linear (hire more engineers) | Exponential (AI scales) |
-| **Learning Curve** | 3-6 months onboarding | Instant (pre-trained GPT-4) |
-| **Consistency** | Variable (human fatigue) | Deterministic (AI logic) |
+| Time to Resolution | 15-30 minutes | 34 seconds (99.3% faster) |
+| Cost per Ticket | $11.25-$22.50 | $0.03 (99.7% cheaper) |
+| Availability | 8x5 business hours | 24x7x365 automated |
+| Accuracy | 60-70% first-time-fix | 89.8% auto-resolution |
+| Human Dependency | 100% manual | 10.2% escalation only |
+| Scalability | Linear (hire more engineers) | Exponential (AI scales) |
+| Learning Curve | 3-6 months onboarding | Instant (pre-trained GPT-4) |
+| Consistency | Variable (human fatigue) | Deterministic (AI logic) |
 
 ---
 
@@ -398,52 +398,52 @@ CIRCUIT_BREAKER_THRESHOLD=3         # Failures before auto-pause
 ```
 
 ### Runtime Modes
-1. **Production Mode** - Managed Identity, HITL enabled, rollback enabled
-2. **Simulation Mode** - No actual Azure changes, safe testing
-3. **Debug Mode** - Verbose logging, step-by-step execution
+1. Production Mode - Managed Identity, HITL enabled, rollback enabled
+2. Simulation Mode - No actual Azure changes, safe testing
+3. Debug Mode - Verbose logging, step-by-step execution
 
 ---
 
 ## 📞 Support & Contact
 
 ### Project Information
-- **Developer:** Rajan AI
-- **Version:** 1.0
-- **Release Date:** January 2025
-- **License:** Proprietary (Client-owned)
+- Developer: Rajan AI
+- Version: 1.0
+- Release Date: January 2025
+- License: Proprietary (Client-owned)
 
 ### Technical Support
-- **Documentation:** See `README.md`, `architecture_diagram.md`
-- **Security Questions:** See `docs/SECURITY_GOVERNANCE.md`
-- **Troubleshooting:** Check logs in console (JSON format)
-- **Metrics Dashboard:** http://localhost:8000/metrics
+- Documentation: See `README.md`, `architecture_diagram.md`
+- Security Questions: See `docs/SECURITY_GOVERNANCE.md`
+- Troubleshooting: Check logs in console (JSON format)
+- Metrics Dashboard: http://localhost:8000/metrics
 
 ---
 
 ## 🎓 Lessons Learned & Best Practices
 
 ### What Worked Well ✅
-1. **Multi-Agent Architecture** - Separation of concerns (diagnostic vs. remediation) improved maintainability
-2. **GPT-4 Prompt Engineering** - Structured prompts with context yielded 95% accuracy in root cause analysis
-3. **Type Safety (Pydantic)** - Caught 100% of runtime errors at development time
-4. **Prometheus Metrics** - Enabled real-time performance monitoring and alerting
-5. **Simulation Mode** - Allowed safe testing without Azure resources
+1. Multi-Agent Architecture - Separation of concerns (diagnostic vs. remediation) improved maintainability
+2. GPT-4 Prompt Engineering - Structured prompts with context yielded 95% accuracy in root cause analysis
+3. Type Safety (Pydantic) - Caught 100% of runtime errors at development time
+4. Prometheus Metrics - Enabled real-time performance monitoring and alerting
+5. Simulation Mode - Allowed safe testing without Azure resources
 
 ### Technical Challenges & Solutions 🔧
 | Challenge | Solution |
 |-----------|----------|
-| **Prometheus Port Conflicts** | Implemented custom `CollectorRegistry` to isolate metrics |
-| **Azure SDK Type Safety** | Added safe None checks: `getattr(obj, 'attr', default)` |
-| **OpenAI Rate Limits** | Implemented retry logic with exponential backoff |
-| **HITL Integration** | Mock approval system for demo, webhook integration for production |
-| **Rollback Complexity** | State snapshot before each change, atomic rollback on failure |
+| Prometheus Port Conflicts | Implemented custom `CollectorRegistry` to isolate metrics |
+| Azure SDK Type Safety | Added safe None checks: `getattr(obj, 'attr', default)` |
+| OpenAI Rate Limits | Implemented retry logic with exponential backoff |
+| HITL Integration | Mock approval system for demo, webhook integration for production |
+| Rollback Complexity | State snapshot before each change, atomic rollback on failure |
 
 ### Future Improvements 🚀
-1. **FastAPI REST API** - Already imported, needs endpoint implementation
-2. **WebSocket Support** - Real-time progress updates to frontend
-3. **ML-Based Anomaly Detection** - Train on historical ticket data for predictive analysis
-4. **Multi-Cloud Support** - Extend to AWS EC2, GCP Compute Engine
-5. **Advanced HITL** - Slack/Teams integration for approval workflows
+1. FastAPI REST API - Already imported, needs endpoint implementation
+2. WebSocket Support - Real-time progress updates to frontend
+3. ML-Based Anomaly Detection - Train on historical ticket data for predictive analysis
+4. Multi-Cloud Support - Extend to AWS EC2, GCP Compute Engine
+5. Advanced HITL - Slack/Teams integration for approval workflows
 
 ---
 
@@ -480,17 +480,17 @@ CIRCUIT_BREAKER_THRESHOLD=3         # Failures before auto-pause
 
 ## ✨ Conclusion
 
-This project successfully delivers a **production-ready, enterprise-grade AI agent system** that:
+This project successfully delivers a production-ready, enterprise-grade AI agent system that:
 
-1. ✅ **Meets all client requirements** (architecture, customer flow, troubleshooting play, security, observability, working code)
-2. ✅ **Achieves 89.8% auto-resolution rate** with 34-second average resolution time
-3. ✅ **Reduces costs by 99.7%** ($0.03 vs. $11-22 per ticket)
-4. ✅ **Maintains zero warnings** (type-safe, production-ready code)
-5. ✅ **Includes comprehensive documentation** (48 KB across 4 files)
-6. ✅ **Implements enterprise security** (Managed Identity, RBAC, HITL, rollback, audit logging)
-7. ✅ **Provides full observability** (Prometheus metrics, structured logs, performance tracking)
+1. ✅ Meets all client requirements (architecture, customer flow, troubleshooting play, security, observability, working code)
+2. ✅ Achieves 89.8% auto-resolution rate with 34-second average resolution time
+3. ✅ Reduces costs by 99.7% ($0.03 vs. $11-22 per ticket)
+4. ✅ Maintains zero warnings (type-safe, production-ready code)
+5. ✅ Includes comprehensive documentation (48 KB across 4 files)
+6. ✅ Implements enterprise security (Managed Identity, RBAC, HITL, rollback, audit logging)
+7. ✅ Provides full observability (Prometheus metrics, structured logs, performance tracking)
 
-**Status: READY FOR CLIENT DELIVERY** 🚀
+Status: READY FOR CLIENT DELIVERY 🚀
 
 ---
 

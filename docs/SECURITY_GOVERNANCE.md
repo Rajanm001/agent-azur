@@ -1,6 +1,6 @@
 # Safety, Security, and Governance Plan
 ### Azure Agentic AI for RDP Supportability
-**Designed by: Rajan AI**
+Designed by: Rajan AI
 
 ---
 
@@ -31,10 +31,10 @@
 
 | Role | Scope | Purpose | Justification |
 |------|-------|---------|---------------|
-| **Reader** | Subscription | Read VM metadata, NSG rules, diagnostics | Minimum required for diagnostics |
-| **Virtual Machine Contributor** | Resource Group | Start/stop VMs, restart services | Required for VM-level remediation |
-| **Network Contributor** | Resource Group | Modify NSG rules | Required for network remediation |
-| **Monitoring Contributor** | Subscription | Write to Azure Monitor | Required for observability |
+| Reader | Subscription | Read VM metadata, NSG rules, diagnostics | Minimum required for diagnostics |
+| Virtual Machine Contributor | Resource Group | Start/stop VMs, restart services | Required for VM-level remediation |
+| Network Contributor | Resource Group | Modify NSG rules | Required for network remediation |
+| Monitoring Contributor | Subscription | Write to Azure Monitor | Required for observability |
 
 #### Least Privilege Implementation
 
@@ -102,9 +102,9 @@ All secrets stored in Azure Key Vault:
 
 | Data State | Encryption | Standard |
 |-----------|------------|----------|
-| **At Rest** | Azure Storage encryption | AES-256 |
-| **In Transit** | TLS 1.3 | TLS 1.3 |
-| **In Memory** | Secure enclave (optional) | N/A |
+| At Rest | Azure Storage encryption | AES-256 |
+| In Transit | TLS 1.3 | TLS 1.3 |
+| In Memory | Secure enclave (optional) | N/A |
 
 #### Data Classification
 
@@ -256,11 +256,11 @@ Every action is logged immutably to Azure Monitor:
 
 | Standard | Requirement | Implementation |
 |----------|------------|----------------|
-| **SOC 2 Type II** | Audit trail for all changes | ✅ Azure Monitor Logs (90-day retention) |
-| **GDPR** | No PII without consent | ✅ Data minimization, anonymization |
-| **ISO 27001** | Access controls | ✅ RBAC, MFA, least privilege |
-| **HIPAA** | PHI protection | ✅ Encryption, access logs (if applicable) |
-| **PCI DSS** | Payment data security | ⚠️ N/A (no payment data handled) |
+| SOC 2 Type II | Audit trail for all changes | ✅ Azure Monitor Logs (90-day retention) |
+| GDPR | No PII without consent | ✅ Data minimization, anonymization |
+| ISO 27001 | Access controls | ✅ RBAC, MFA, least privilege |
+| HIPAA | PHI protection | ✅ Encryption, access logs (if applicable) |
+| PCI DSS | Payment data security | ⚠️ N/A (no payment data handled) |
 
 ### 3. Change Management
 
@@ -305,10 +305,10 @@ Change Approval Process:
 
 | Severity | Examples | Response Time | Escalation |
 |----------|----------|---------------|------------|
-| **P1 - Critical** | Unauthorized access, data breach | < 15 min | Immediate |
-| **P2 - High** | Failed auth attempts spike | < 1 hour | If persists |
-| **P3 - Medium** | Unusual API usage | < 4 hours | If continues |
-| **P4 - Low** | Single failed login | < 24 hours | N/A |
+| P1 - Critical | Unauthorized access, data breach | < 15 min | Immediate |
+| P2 - High | Failed auth attempts spike | < 1 hour | If persists |
+| P3 - Medium | Unusual API usage | < 4 hours | If continues |
+| P4 - Low | Single failed login | < 24 hours | N/A |
 
 ### Incident Response Playbook
 
@@ -365,27 +365,27 @@ AzureRDPAgentLogs
 
 | Alert | Condition | Severity | Action |
 |-------|-----------|----------|--------|
-| **Unauthorized API Call** | 403/401 response | Critical | Page on-call, revoke token |
-| **Failed Auth Spike** | >10 failures in 5 min | High | Lock account, notify SOC |
-| **Unusual Remediation** | Off-hours execution | Medium | Email security team |
-| **High Token Usage** | >10k tokens/hour | Low | Cost alert, review usage |
+| Unauthorized API Call | 403/401 response | Critical | Page on-call, revoke token |
+| Failed Auth Spike | >10 failures in 5 min | High | Lock account, notify SOC |
+| Unusual Remediation | Off-hours execution | Medium | Email security team |
+| High Token Usage | >10k tokens/hour | Low | Cost alert, review usage |
 
 ---
 
 ## ✅ Compliance Checklist
 
-- [x] **Authentication**: Managed Identity with RBAC
-- [x] **Authorization**: Least privilege access
-- [x] **Audit Logging**: All actions logged to Azure Monitor
-- [x] **Encryption**: TLS 1.3 in transit, AES-256 at rest
-- [x] **Secret Management**: Azure Key Vault integration
-- [x] **Data Protection**: No PII collected, GDPR compliant
-- [x] **Incident Response**: Documented playbook
-- [x] **Monitoring**: Real-time security alerts
-- [x] **Backup & Recovery**: Automatic state backup before changes
-- [x] **Rate Limiting**: Protection against abuse
-- [x] **Circuit Breaker**: Automatic failure handling
-- [x] **Human Approval**: Configurable for high-risk actions
+- [x] Authentication: Managed Identity with RBAC
+- [x] Authorization: Least privilege access
+- [x] Audit Logging: All actions logged to Azure Monitor
+- [x] Encryption: TLS 1.3 in transit, AES-256 at rest
+- [x] Secret Management: Azure Key Vault integration
+- [x] Data Protection: No PII collected, GDPR compliant
+- [x] Incident Response: Documented playbook
+- [x] Monitoring: Real-time security alerts
+- [x] Backup & Recovery: Automatic state backup before changes
+- [x] Rate Limiting: Protection against abuse
+- [x] Circuit Breaker: Automatic failure handling
+- [x] Human Approval: Configurable for high-risk actions
 
 ---
 
@@ -398,7 +398,7 @@ AzureRDPAgentLogs
 
 ---
 
-**Document Version**: 1.0.0  
-**Last Updated**: October 5, 2025  
-**Author**: Rajan AI  
-**Classification**: Internal Use
+Document Version: 1.0.0  
+Last Updated: October 5, 2025  
+Author: Rajan AI  
+Classification: Internal Use
